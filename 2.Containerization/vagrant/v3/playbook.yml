@@ -1,0 +1,18 @@
+---
+- hosts: "all"
+  become: true
+  tasks:
+  - name: "Install nginx via apt"
+    ansible.builtin.apt:
+      name: "nginx"
+      state: "latest"
+      update_cache: true
+  - name: "Create new text file"
+    ansible.builtin.shell:
+      cmd: touch $(date '+%H:%M:%S')
+  - name: "Add cronjob"
+    ansible.builtin.shell:
+      cmd: echo "0 22 * * 1-5 /root/cron.sh" >> /etc/crontab
+  - name: "Create shell for cron"
+    ansible.builtin.shell:
+      cmd: echo "rm -rf /tmp/ *.*"  > /root/cron.sh

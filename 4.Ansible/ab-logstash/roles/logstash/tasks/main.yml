@@ -1,0 +1,26 @@
+---
+- name: Install logstash
+  package:
+    name: logstash
+    state: present
+
+- name: Configure logstash
+  template:
+    src: "logstash.conf.j2"
+    dest: /etc/logstash/conf.d/logstash.conf
+    owner: root
+    group: logstash
+    mode: 0660
+
+- name: Start logstash
+  service:
+    name: logstash
+    state: started
+    enabled: true
+
+- name: Add logstash user to adm group
+  user:
+    name: logstash
+    group: logstash
+    groups: adm
+
