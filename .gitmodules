@@ -1,0 +1,9 @@
+[submodule "4.Ansible/ab-webui"]
+	path = 4.Ansible/ab-webui
+	url = https://github.com/Magply/ab-webui.git
+[submodule "4.Ansible/ab-logstash"]
+	path = 4.Ansible/ab-logstash
+	url = https://github.com/Magply/ab-logstash.git
+[submodule "4.Ansible/ab-haproxy"]
+	path = 4.Ansible/ab-haproxy
+	url = https://github.com/Magply/ab-haproxy.git
