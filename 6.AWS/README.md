@@ -13,6 +13,7 @@
 - [The web-sg security group](#the-web-sg-security-group)
 - [One ElastiCache (Redis) instance and one ElastiCache (Memcached) ](#one-elasticache-redis-instance-and-one-elasticache-memcached)
 - [A CloudFront Distribution](#a-cloudfront-distribution)
+- [ElasticBeanstalk](#elasticbeanstalk)
 - [Problems](#problems)
 
 <!-- TOC end -->
@@ -103,7 +104,37 @@ Redis:
 ![alt text](./images/23.png)
 ![alt text](./images/24.png)
 
+
+<!-- TOC --><a name="elasticbeanstalk"></a>
+## ElasticBeanstalk 
+
+Install the EB CLI
+
+```pip install awsebcli```
+
+Configure the EB CLI
+
+```eb init```
+
+Create the application and environment
+
+```eb create my-app --region us-east-1```
+
+Update the Dockerrun.aws.yml file
+
+Deploy the application
+
+```eb deploy```
+
+Check the application
+
+```curl http://my-app.us-east-1.elasticbeanstalk.com```
+
+Output:
+
+```Hello world```
+
 <!-- TOC --><a name="problems"></a>
-## Problems:
+### Problems:
 
 There were no problems encountered while completing the task.
