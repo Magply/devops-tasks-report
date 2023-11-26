@@ -4,10 +4,10 @@
 1. Установка VirtualBox и Vagrant
 2. Vagrant init - создан Vagrantfile с настройками виртуальной машины
 3. Vagrant up - запуск виртуальной машины
-![alt text](./images/up.jpeg)
+![alt text](./images/up.png)
 4. Vagrant ssh - подключение к виртуальной машине через SSH
-![alt text](./images/ssh.jpeg)
+![alt text](./images/ssh.png)
 5. Vagrant halt, vagrant destroy - остановка и удаление виртуальной машины
-![alt text](./images/halt_destroy.jpeg)
+![alt text](./images/halt_destroy.png)
 
 
