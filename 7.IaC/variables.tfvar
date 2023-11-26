@@ -1,0 +1,122 @@
+# Basic setting
+variable "vpc_cidr" {
+  default = "172.0.0.0/16"
+}
+
+variable "subnet_cidrs" {
+  type = map(any)
+  default = {
+    "public_1": "172.0.1.0/24",
+    "public_2": "172.0.3.0/24",
+    "private_1": "172.0.2.0/24",
+    "private_2": "172.0.4.0/24",
+  }
+}
+
+variable "key_name" { 
+  default = "itra-devops"
+}
+
+variable "key_pair_name" {
+  default = "itra-devops"
+}
+
+# Ресурсы
+variable "instance_type" {
+  default = "t2.micro"
+}
+
+variable "ami" {
+  type = map(any)
+  default = {
+    "amazon": "ami-092b51d9008adea15",
+  }
+}
+
+variable "instance_count" {
+  type = map(any)
+  default = {
+    "min": "1",
+    "desired": "2",
+    "max": "4",
+  }
+}
+
+variable "security_group_cidr" {
+  default = "213.134.170.224/32"
+}
+
+# Балансировщик нагрузки
+variable "load_balancer_port" {
+  default = 80
+}
+
+variable "load_balancer_protocol" {
+  default = "HTTP"
+}
+
+variable "load_balancer_health_check_path" {
+  default = "/index.html"
+}
+
+# RDS
+variable "rds_instance_type" {
+  default = "db.t3.micro"
+}
+
+variable "rds_engine" {
+  default = "postgres"
+}
+
+variable "rds_engine_version" {
+  default = "14.3"
+}
+
+variable "rds_database_name" {
+  default = "postgres"
+}
+
+variable "rds_username" {
+  default = "postgres"
+}
+
+variable "rds_password" {
+  description = "RDS root user password"
+  type        = string
+  sensitive   = true
+  default     = "postgres"
+}
+
+variable "rds_storage_size" {
+  default = 20
+}
+
+# Redis
+variable "redis_cluster_id" {
+  default = "redis"
+}
+
+variable "redis_instance_type" {
+  default = "cache.t2.micro"
+}
+
+variable "redis_engine_version" {
+  default = "7.0"
+}
+
+variable "redis_port" {
+  default = "6379"
+}
+
+# Memcached
+variable "memcached_cluster_id" {
+  default = "memcached"
+}
+
+variable "memcached_instance_type" {
+  default = "cache.t3.micro"
+}
+
+variable "memcached_port" {
+  default = 11211
+}
