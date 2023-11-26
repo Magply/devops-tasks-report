@@ -1,54 +1,54 @@
 # Teamcity
 
+Запущен docker с teamcity
 
-запущен docker с teacity
-![alt text](./images/docker run.jpeg)
+![alt text](./images/docker_run.png)
 
 сайт доступен
-![alt text](./images/team http.jpeg)
+![alt text](./images/team_http.png)
 
 На Github склонирован репозиторий с кодом teamcity-react-demo 
 
 Создан агент 
-![alt text](./images/agent.jpeg)
-![alt text](./images/agent_team.jpeg)
+![alt text](./images/agent.png)
+![alt text](./images/agent_team.png)
 
 Создан проект для сборки приложения
-![alt text](./images/settings_bild.jpeg)
-![alt text](./images/bild_step.jpeg)
-![alt text](./images/bild.jpeg)
+![alt text](./images/settings_bild.png)
+![alt text](./images/bild_step.png)
+![alt text](./images/bild.png)
 
-![alt text](./images/bild_artifacts.jpeg)
-![alt text](./images/bild_parameters.jpeg)
-![alt text](./images/bild_test.jpeg)
+![alt text](./images/bild_artifacts.png)
+![alt text](./images/bild_parameters.png)
+![alt text](./images/bild_test.png)
 
 Настроен автоматический запуск деплоя при добавлении нового commit’а
-![alt text](./images/build_triggers.jpeg)
+![alt text](./images/build_triggers.png)
 
 Создана задача в Teamcity для деплоя артифакта
-![alt text](./images/deploy_settings.jpeg)
+![alt text](./images/deploy_settings.png)
 
-![alt text](./images/deploy_bildsteps.jpeg)
-![alt text](./images/deploy_s1.jpeg)
-![alt text](./images/deploy_s2.jpeg)
-![alt text](./images/deploy_s3.jpeg)
+![alt text](./images/deploy_bildsteps.png)
+![alt text](./images/deploy_s1.png)
+![alt text](./images/deploy_s2.png)
+![alt text](./images/deploy_s3.png)
 
-![alt text](./images/deploy.jpeg)
+![alt text](./images/deploy.png)
 
 
 Добавлена задача создания бэкапа
-![alt text](./images/backup_settings.jpeg)
+![alt text](./images/backup_settings.png)
 
-![alt text](./images/backup_step.jpeg)
+![alt text](./images/backup_step.png)
 
-![alt text](./images/backup.jpeg)
+![alt text](./images/backup.png)
 
 Настроен пайплайн, в который включены  - сборка, бэкап и деплой
-![alt text](./images/pipeline_settings.jpeg)
+![alt text](./images/pipeline_settings.png)
 
-![alt text](./images/pipeline_dependencies.jpeg)
-![alt text](./images/pipeline.jpeg)
+![alt text](./images/pipeline_dependencies.png)
+![alt text](./images/pipeline.png)
 
 Создан новый проект “Production”, добавлена задача для сборки приложения, выполнены те же настройки, что и в Staging, используется ветка “master”
-![alt text](./images/production.jpeg)
-![alt text](./images/deploy_depend_prod.jpeg)
+![alt text](./images/production.png)
+![alt text](./images/deploy_depend_prod.png)
