@@ -6,7 +6,7 @@ VirtualBox
 2. Созданы скрипты установки для каждой виртуальной машины (scripts1.sh и scripts2.sh), которые выполняются при их создании
  
 3. Vagrant up - запуск виртуальных машин
-[alt text](./images/status.jpeg)
+![alt text](./images/status.jpeg)
 4. vagrant ssh server1, vagrant ssh server2 - VM имеют доступ в интернет, имеют доступ друг к другу
 ![alt text](./images/ssh server1.jpeg)
 ![alt text](./images/ssh server2.jpeg)
