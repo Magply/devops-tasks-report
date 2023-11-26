@@ -1,5 +1,12 @@
 # Ansible
 
+## Prerequisite
+
+```
+git submodule update --init --recursive
+```
+
+
 mkdir ab-haproxy
 1. Создан Vagrantfile, ansible.cfg и playbook.yaml, в репозитории Galaxy найдены роли и сохранены локально согласно инструкции
 2. vagrant up - запущена виртуальная машина - при запуске загружается playbook.yaml
@@ -28,4 +35,4 @@ mkdir ab-logstash
 ![alt text](./images/virtualbox_ansible.png)
 
 Вебстраница доступна
-![alt text](./images/elastic.png)?????
+![alt text](./images/elastic.png)
