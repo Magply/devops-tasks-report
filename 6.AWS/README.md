@@ -1,33 +1,21 @@
 # AWS Basics
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
-- [Table of Contents](#table-of-contents)
-   * [A dedicated Amazon Virtual Private Cloud (VPC) ](#a-dedicated-amazon-virtual-private-cloud-vpc)
-   * [In additional to above, it require to create Internet Gateway](#in-additional-to-above-it-require-to-create-internet-gateway)
-   * [And attach it to VPC](#and-attach-it-to-vpc)
-   * [Create ACL](#create-acl)
-   * [A security group (web-sg) was created with the rules specified in the task.](#a-security-group-web-sg-was-created-with-the-rules-specified-in-the-task)
-   * [A private RSA key (Key Pairs) was generated for use in the future when creating instances.](#a-private-rsa-key-key-pairs-was-generated-for-use-in-the-future-when-creating-instances)
-   * [Two t2.micro instances ](#two-t2micro-instances)
-   * [An Elastic Load Balancing (ELB)](#an-elastic-load-balancing-elb)
-   * [A PostgreSQL instance](#a-postgresql-instance)
-   * [The web-sg security group](#the-web-sg-security-group)
-   * [One ElastiCache (Redis) instance and one ElastiCache (Memcached) ](#one-elasticache-redis-instance-and-one-elasticache-memcached)
-   * [A CloudFront Distribution](#a-cloudfront-distribution)
+- [A dedicated Amazon Virtual Private Cloud (VPC) ](#a-dedicated-amazon-virtual-private-cloud-vpc)
+- [In additional to above, it require to create Internet Gateway](#in-additional-to-above-it-require-to-create-internet-gateway)
+- [And attach it to VPC](#and-attach-it-to-vpc)
+- [Create ACL](#create-acl)
+- [A security group (web-sg) was created with the rules specified in the task.](#a-security-group-web-sg-was-created-with-the-rules-specified-in-the-task)
+- [A private RSA key (Key Pairs) was generated for use in the future when creating instances.](#a-private-rsa-key-key-pairs-was-generated-for-use-in-the-future-when-creating-instances)
+- [Two t2.micro instances ](#two-t2micro-instances)
+- [An Elastic Load Balancing (ELB)](#an-elastic-load-balancing-elb)
+- [A PostgreSQL instance](#a-postgresql-instance)
+- [The web-sg security group](#the-web-sg-security-group)
+- [One ElastiCache (Redis) instance and one ElastiCache (Memcached) ](#one-elasticache-redis-instance-and-one-elasticache-memcached)
+- [A CloudFront Distribution](#a-cloudfront-distribution)
 - [Problems](#problems)
 
 <!-- TOC end -->
-
-<!-- TOC --><a name="aws-basics"></a>
-# AWS Basics
-
-<!-- TOC --><a name="table-of-contents"></a>
-# Table of Contents
-
-* [A dedicated Amazon Virtual Private Cloud (VPC) ](#A-dedicated-Amazon-Virtual-Private-Cloud-(VPC))
-* [In additional to above, it require to create Internet Gateway ](#In-additional-to-above,-it-require-to-create-Internet-Gateway)
-* [Заголовок 3](#заголовок-3)
 
 <!-- TOC --><a name="a-dedicated-amazon-virtual-private-cloud-vpc"></a>
 ## A dedicated Amazon Virtual Private Cloud (VPC) 
