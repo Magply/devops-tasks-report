@@ -1,3 +1,0 @@
----
-- name: restart rsyslog
-  command: systemctl restart rsyslog

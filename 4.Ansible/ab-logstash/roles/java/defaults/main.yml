@@ -1,3 +1,0 @@
----
-java_version: 8
-java_packages: openjdk-{{ java_version }}-jdk
