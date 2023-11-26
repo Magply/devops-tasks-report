@@ -15,7 +15,7 @@ sudo docker-compose --version
 3. sudo docker-compose build
 
 4. sudo docker-compose up -d
-![alt text](./images/DC up.jpeg)
-![alt text](./images/http.jpeg)
+![alt text](./images/DC up.png)
+![alt text](./images/http.png)
 
 5. sudo docker-compose down
