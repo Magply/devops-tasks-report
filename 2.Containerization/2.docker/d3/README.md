@@ -10,7 +10,7 @@
 3. kubectl create -f my-pod.yaml
 
 kubectl get pods, kubectl get services
-![alt text](./images/pod servis.png)
+![alt text](./images/pod-servis.png)
 
 kubectl describe pod my-pod
 ![alt text](./images/describe.png)
